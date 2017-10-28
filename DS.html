@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head><link href="favicon.ico" rel="shortcut icon" />
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type" />
+    <meta content="now" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="Cache-Control" />
+    <meta content="no-cache" http-equiv="Pragma" />
+    <meta content="width=device-width initial-scale=1.0" name="viewport" />
+
+    <link href="OKUSON.css" type="text/css" rel="StyleSheet" />
+
+    <title>Diskrete Strukturen, WS 2017/18,  Dr. Sebastian Thomas, RWTH Aachen</title>
+  </head>
+
+  <body>
+    
+    <h1>Diskrete Strukturen, WS 2017/18</h1>
+
+    <h2>Dr. Sebastian Thomas</h2>
+
+    <h3>Daten</h3>
+    <ul>
+      <!--<li><a href="registration.html">Anmeldung</a></li>-->
+      <li><a href="regchange.html">Daten ändern</a></li>
+      <li><a href="resquery.html">Übungspunkte und persönliche Informationen</a></li>
+    </ul>
+
+    <h3>Materialien</h3>
+    <ul>
+      <li><a href="lecture_notes.html">Vorlesungsmaterialien</a></li>
+      <li><a href="exquery.html">Übungsblätter</a></li>
+      <li><a href="materials/Thomas_Diskrete_Strukturen_2017.pdf">Thomas:
+        Diskrete Strukturen</a> (Manuskript 2017, Version&nbsp;1.2.2,&nbsp;26.10.2017)</li>
+    </ul>
+
+    <h3>Informationen</h3>
+    <ul>
+      <li><a href="generalinfo.html">Allgemeine Informationen</a>
+        (<a href="materials/infoblatt.pdf">Infoblatt</a>)</li>
+    <!--
+      <li><a href="groupoverview.html">Tutorien</a></li>
+      <li>Evaluation: <a href="materials/evaluation_vorlesung.pdf">Vorlesung</a>, 
+        <a href="materials/evaluation_uebung.pdf">Übung</a>,
+        <a href="materials/evaluation_fragestunde.pdf">Fragestunde</a>,
+        <a href="materials/evaluation_auswertung_kritikpunkte.pdf">Auswertung Kritikpunkte</a>
+        </li>
+    -->
+    </ul>
+
+    <!--
+    <h3>Anmeldungen</h3>
+    <ul>
+      <li><a href="examregistration.html">Anmeldung zur Präsenzübung</a></li>
+      <li><a href="examregistration.html">Anmeldung zur Wiederholungspräsenzübung</a></li>
+    </ul>
+    -->
+
+    <h3>Aktuelle Informationen</h3>
+    <ul>
+      <li class="info">22.10.2017: Wegen des Feiertags am 31.10.2017 sind die
+        schriftlichen Aufgaben von Blatt&nbsp;2 bereits bis Montag, 30.10.2017,
+        18:00&nbsp;Uhr abzugeben.</li>
+      <!--
+      <li class="info">18.10.2017: Die Tutoren von Gruppe&nbsp;13 und Gruppe&nbsp;15
+        wurden getauscht; d.h. Tutorium&nbsp;13 wird geleitet von Nadine Trampenau,
+        Tutorium&nbsp;15 von Marc Meskes.</li>
+      <li class="info">17.10.2017: In Aufgabe&nbsp;6 wurde ein Fehler korrigiert: Bei der
+        dritten zu zeigenden Aussage muss es n^2 + 3 (statt n^2 + 1) heißen.</li>
+      <li class="info">17.10.2017: Bitte beachten Sie, dass an einigen Terminen manche
+        Tutorien nicht in ihren üblichen Räumen stattfinden können und deshalb verlegt
+        werden müssen. Für den ersten Freitag betrifft dies die folgenden Tutorien:
+        <ul>
+          <li>Gruppe&nbsp;3 bei Raimund Hensen in WK&nbsp;(1230|001)</li>
+          <li>Gruppe&nbsp;9 bei Andreas Br&uuml;ggemann in Be&nbsp;225&nbsp;(1140|225)</li>
+          <li>Gruppe&nbsp;13 bei Marc Meskes in RS&nbsp;4&nbsp;(3990|004)</li>
+        </ul></li>
+      <li class="info">16.10.2017: Übungsblatt&nbsp;1 kann ab sofort
+        <a href="exquery.html">bearbeitet</a> werden. Die Abgabefrist ist am Dienstag,
+        24.10., 15:30&nbsp;Uhr.<br />
+        Bitte achten Sie bei den Onlineaufgaben stets auf die Eingabeeinweisungen.
+        Insbesondere bei den Aufgaben&nbsp;3 und&nbsp;4 müssen Sie bei den
+        Multiple-Choice-Aufgaben darauf achten, die Vorauswahl zu deaktivieren. Bitte
+        achten Sie bei den schriftlichen Aufgaben darauf, alle Schritte ausführlich zu
+        begründen und ggf. durch Referenzen ins Manuskript zu belegen. Bspw. genügt es in
+        Aufgabe&nbsp;5 nicht, die Endergebnisse anzugeben und auch die Angabe von
+        Wahrheitstafeln ist zu kurz. Bitte achten Sie ferner darauf, nur Methoden aus der
+        Vorlesung zu verwenden, die bereits dran gekommen sind (und inbesondere keine
+        Methoden/Schreibweisen aus anderen Vorlesungen).</li>
+      <li class="info">13.10.2017: Die Tutoriumsgruppen sind nun eingeteilt. Sie erfahren
+        Ihre Gruppennummer, indem Sie sich auf Ihrer
+        <a href="resquery.html">Ergebnisseite</a> einloggen. Leider konnten nicht alle
+        Wünsche berücksichtigt werden.<br />
+        Falls Sie sich vor der Anmeldefrist noch nicht angemeldet hatten, können Sie dies
+        nun nachholen. Sie werden dann im Laufe der nächsten Woche in ein Tutorium
+        eingeteilt.</li>
+      <li class="info">12.10.2017: Da in Kürze die Tutorien eingeteilt werden, gibt es
+        momentan keine Möglichkeit, sich für die Veranstaltung anzumelden. Mit Bekanntgabe
+        der Einteilung wird die Anmeldung wieder freigeschaltet.</li>
+      <li class="info">12.10.2017: Das
+        <a href="materials/Thomas_Diskrete_Strukturen_2017.pdf">Manuskript</a>, welches
+        als Grundlage zur Veranstaltung dient, ist ab sofort verfügbar. Es unterscheidet
+        sich in einigen Punkten vom Manuskript zur Vorlesung aus dem
+        Wintersemester&nbsp;2016/17. Verwenden Sie bitte die Nummerierung von
+        Version&nbsp;1.2 für Referenzen in Ihren Übungsaufgaben.<br />
+        Da zunächst keine umfangreichen Änderungen während des Semesters erwartet werden,
+        wird es vermutlich nur in Einzelfällen zur Veröffentlichung von Einzelmaterialien
+        zu den jeweiligen Vorlesungen kommen (diese werden dann die zusätzlichen Inhalte
+        oder Änderungen enthalten). Die Nummerierung von Version&nbsp;1.2 wird sich dabei
+        während des Semesters nicht ändern. Sollten Inhalte während des Semesters
+        hinzugefügt werden, werden diese entweder ohne Nummern veröffentlicht oder es wird
+        eine alternative Nummerierung verwendet. Erst nach Abschluss des Semesters wird
+        ggf. eine neue Version erstellt, bei der sich möglicherweise auch die Nummerierung
+        ändern wird.</li>
+      <li class="info">11.10.2017: Die Tutorien finden ab Freitag, 20.10.2017 statt.</li>
+      <li class="info">02.10.2017: Bitte <a href="registration.html">melden</a> Sie sich
+        bis <span class="important">Mittwoch, 11.10.2017, 23:59&nbsp;Uhr</span> an.
+        Zur Authentifizierung müssen Sie Ihre RWTH-E-Mail-Adresse angeben. Diese ist von
+        der Form vorname.nachname@rwth-aachen.de, nicht von der Form
+        vn123456@rwth-aachen.de (das ist Ihre TIM-Kennung).</li>
+      <li class="info">02.10.2017: Die erste Veranstaltung findet am 09.10.2017 um
+        18:15&nbsp;Uhr im Hörsaal
+        <a href="https://www.campus.rwth-aachen.de/rwth/all/room.asp?room=1385%7C102">H02&nbsp;(1385|102)</a>
+        statt.</li>
+      <li class="info">02.10.2017: Ein freiwilliges Übungsblatt&nbsp;0 ist ab sofort
+        <a href="exquery.html">verfügbar</a>. Sie können es bis Dienstag, 17.10.2017,
+        15:30&nbsp;Uhr bearbeiten. Schulwissen der gymnasialen Mittelstufe sollte zur
+        Bearbeitung ausreichen. Das Übungsblatt dient in erster Linie dazu, sich mit dem
+        System der Online-Aufgaben vertraut zu machen. Aus diesem Grund wird die
+        Bearbeitung mit Nachdruck empfohlen.</li>
+      <li class="info">02.10.2017: Beachten Sie, dass die Vorauswahl "-" bei den
+        Online-Aufgaben keiner Lösungsabgabe für die jeweilige Teilaufgabe entspricht.
+        Insbesondere müssen Sie daher bei Aufgabe&nbsp;-1 diese Vorauswahl deaktivieren,
+        sofern Sie eine Antwort abgeben möchten. Wenn Ihre Abgabe lauten soll, dass keiner
+        der angegebenen Werte eine Lösung darstellt, so müssen alle Kästchen deaktiviert
+        sein.</li>
+      -->
+              
+      <!--
+      <li class="info">20.04.2017: Notenspiegel zur Veranstaltung:
+        <table>
+          <tr><td>Note</td> <td>sehr gut</td> <td>gut</td> <td>befriedigend</td>
+            <td>ausreichend</td> <td>nicht ausreichend</td></tr>
+          <tr><td>Mindestleistung</td> <td>90%</td> <td>75%</td> <td>60%</td> <td>50%</td>
+            <td>0%</td></tr>
+          <tr><td>absolut</td> <td>42</td> <td>58</td> <td>139</td> <td>100</td>
+            <td>12</td></tr>
+          <tr><td>relativ</td> <td>12,0%</td> <td>16,5%</td> <td>39,6%</td> <td>28,5%</td>
+            <td>3,4%</td></tr>
+        </table>
+        Teilgenommen haben 351&nbsp;Studierende. Der Notenschnitt liegt bei 2,94.<br />
+        Als Teilnehmer wurden diejenigen Studierenden berücksichtigt, die wenigstens eine
+        der beiden Klausuren mitgeschrieben haben. Für diejenigen, welche bei beiden
+        Klausuren mitgeschrieben haben, wurde die bessere der beiden Noten gewertet.</li>
+      <li class="info">17.04.2017: Ab sofort können Sie sich zur Veranstaltung
+        <a href="https://www2.math.rwth-aachen.de/LAInf17/">Lineare Algebra für
+        Informatiker</a> anmelden.</li>
+      <li class="info">12.04.2017: Notenspiegel zur Veranstaltung:
+        <table>
+          <tr><td>Note</td> <td>sehr gut</td> <td>gut</td> <td>befriedigend</td>
+            <td>ausreichend</td> <td>nicht ausreichend</td></tr>
+          <tr><td>Mindestleistung</td> <td>90%</td> <td>75%</td> <td>60%</td> <td>50%</td>
+            <td>0%</td></tr>
+          <tr><td>absolut</td> <td>42</td> <td>58</td> <td>138</td> <td>99</td>
+            <td>13</td></tr>
+          <tr><td>relativ</td> <td>12,0%</td> <td>16,6%</td> <td>39,4%</td> <td>28,3%</td>
+            <td>3,7%</td></tr>
+        </table>
+        Teilgenommen haben 350&nbsp;Studierende. Der Notenschnitt liegt bei 2,94.<br />
+        Als Teilnehmer wurden diejenigen Studierenden berücksichtigt, die wenigstens eine
+        der beiden Klausuren mitgeschrieben haben. Für diejenigen, welche bei beiden
+        Klausuren mitgeschrieben haben, wurde die bessere der beiden Noten gewertet.</li>
+      <li class="info">07.04.2017: Die Nachkorrekturen nach der Einsicht zur
+        Wiederholungsklausur sind abgeschlossen.</li>
+      <li class="info">05.04.2017: Vorläufiger Notenspiegel zur Wiederholungsklausur
+        vom&nbsp;05.04.2017:
+        <table>
+          <tr><td>Note</td> <td>1,0</td> <td>1,3</td> <td>1,7</td> <td>2,0</td>
+            <td>2,3</td> <td>2,7</td> <td>3,0</td> <td>3,3</td> <td>3,7</td> <td>4,0</td>
+            <td>5,0</td></tr>
+          <tr><td>Mindestleistung</td> <td>95%</td> <td>90%</td> <td>85%</td> <td>80%</td>
+            <td>75%</td> <td>70%</td> <td>65%</td> <td>60%</td> <td>55%</td> <td>50%</td>
+            <td>0%</td></tr>
+          <tr><td>absolut</td> <td>0</td> <td>0</td> <td>1</td> <td>1</td> <td>7</td>
+            <td>12</td> <td>12</td> <td>24</td> <td>18</td> <td>15</td> <td>11</td></tr>
+          <tr><td>relativ</td> <td>0,0%</td> <td>0,0%</td> <td>1,0%</td> <td>1,0%</td>
+            <td>6,9%</td> <td>11,9%</td> <td>11,9%</td> <td>23,8%</td> <td>17,8%</td>
+            <td>14,9%</td> <td>10,9%</td></tr>
+        </table>
+        Teilgenommen haben 101&nbsp;Studierende. Der Notenschnitt liegt bei 3,46.</li>
+      <li class="info">05.04.2017: Ihr vorläufiges Ergebnis der Wiederholungsklausur vom
+        05.04.2017 wurde an das ZPA übertragen. Alle Angaben ohne Gewähr.<br />
+        Die Einsicht zur Wiederholungsklausur findet am Freitag, 07.04.2017 im Raum
+        SeMath&nbsp;(1950|008) im Mathematikgebäude statt. Bringen Sie zur Einsicht bitte
+        Ihre BlueCard und etwas Zeit mit.</li>
+      <li>02.04.2017: Die Wiederholungsklausur findet am Mittwoch, 05.04.2017, ab 
+        ca. 11:00&nbsp;Uhr im Hörsaal Fo&nbsp;1&nbsp;(1820|201) statt. Bitte seien Sie ein
+        paar Minuten früher da, damit pünktlich begonnen werden kann. Warten Sie zunächst
+        vor dem Hörsaal, Sie werden von den Aufsichtspersonen reingerufen. Bringen Sie zum
+        Ausfüllen des Klausurbogens einen dokumentenechten blauen oder schwarzen Stift
+        mit. Denken Sie außerdem an Ihre BlueCard, damit Sie sich ausweisen können. Bei
+        der Klausur sind keinerlei Hilfsmittel außer eines zweiten farbigen Stifts (nicht
+        rot und nicht grün) erlaubt. Mit diesem dürfen Sie Markierungen an Graphen
+        anbringen; beachten Sie aber, dass diese Markierungen als Notizen zählen und nicht
+        gewertet werden.</li>
+      <li class="info">13.03.2017: Notenspiegel zur Abschlussklausur vom&nbsp;24.02.2017:
+        <table>
+          <tr><td>Note</td> <td>1,0</td> <td>1,3</td> <td>1,7</td> <td>2,0</td>
+            <td>2,3</td> <td>2,7</td> <td>3,0</td> <td>3,3</td> <td>3,7</td> <td>4,0</td>
+            <td>5,0</td></tr>
+          <tr><td>Mindestleistung</td> <td>95%</td> <td>90%</td> <td>85%</td> <td>80%</td>
+            <td>75%</td> <td>70%</td> <td>65%</td> <td>60%</td> <td>55%</td> <td>50%</td>
+            <td>0%</td></tr>
+          <tr><td>absolut</td> <td>24</td> <td>17</td> <td>15</td> <td>17</td> <td>18</td>
+            <td>22</td> <td>38</td> <td>30</td> <td>38</td> <td>26</td> <td>21</td></tr>
+          <tr><td>relativ</td> <td>9,0%</td> <td>6,4%</td> <td>5,6%</td> <td>6,4%</td>
+            <td>6,8%</td> <td>8,3%</td> <td>14,3%</td> <td>11,3%</td> <td>14,3%</td>
+            <td>9,8%</td> <td>7,9%</td></tr>
+        </table>
+        Teilgenommen haben 266&nbsp;Studierende. Der Notenschnitt liegt bei 2,89.</li>
+      <li class="info">06.03.2017: Die Nachkorrekturen nach der Einsicht zur
+        Abschlussklausur und zur Zusatzpräsenzübung sind abgeschlossen.</li>
+      <li class="info">01.03.2017: Die Einsicht zur Abschlussklausur und zur
+        Zusatzpräsenzübung findet am Freitag, 03.03.2017, ab 13:00&nbsp;Uhr in
+        Hörsaal&nbsp;IV&nbsp;(1010|141) statt. Bringen Sie zur Einsicht bitte Ihre
+        BlueCard und etwas Zeit mit. Bitte teilen Sie sich zeitlich wie folgt auf:
+        <ul>
+          <li>ab 13:00&nbsp;Uhr: Abschlussklausur, von 000000 bis 366499</li>
+          <li>ab 14:00&nbsp;Uhr: Abschlussklausur, von 366500 bis 368499</li>
+          <li>ab 15:00&nbsp;Uhr: Abschlussklausur, von 368500 bis 999999</li>
+          <li>ab 16:00&nbsp;Uhr: Zusatzpräsenzübung</li>
+        </ul>
+        Um die Wartezeit zu minimieren, bitten wir um die Einhaltung folgender Regeln:
+        <ul>
+          <li>Kommen Sie nicht früher als im Ihnen zugeteilten Zeitraum. Dies gilt
+            insbesondere dann, wenn Sie an der Zusatzpräsenzübung teilgenommen haben.</li>
+          <li>Beschränken Sie Ihre Einsichtszeit auf ein Minimum.</li>
+          <li>Reden Sie während der Einsicht nicht mit Ihren Kommilitonen.</li>
+          <li>Belegen Sie - wie bei der Klausur - ausschließlich jede zweite Reihe
+            (vermutlich werden es die Reihen mit den Nummern 3, 5 und 7 sein), so dass wir
+            bei Fragen an Ihren Platz kommen können.</li>
+          <li>Die vorderste Reihe dient der Ausgabe und Rückgabe der Aufgabenbögen.
+            Halten Sie zur Ausgabe bitte Ihre BlueCard bereit.</li>
+        </ul></li>
+      <li class="info">26.02.2017: Vorläufiger Notenspiegel zur Abschlussklausur
+        vom&nbsp;24.02.2017:
+        <table>
+          <tr><td>Note</td> <td>1,0</td> <td>1,3</td> <td>1,7</td> <td>2,0</td>
+            <td>2,3</td> <td>2,7</td> <td>3,0</td> <td>3,3</td> <td>3,7</td> <td>4,0</td>
+            <td>5,0</td></tr>
+          <tr><td>Mindestleistung</td> <td>95%</td> <td>90%</td> <td>85%</td> <td>80%</td>
+            <td>75%</td> <td>70%</td> <td>65%</td> <td>60%</td> <td>55%</td> <td>50%</td>
+            <td>0%</td></tr>
+          <tr><td>absolut</td> <td>21</td> <td>17</td> <td>17</td> <td>17</td> <td>18</td>
+            <td>22</td> <td>38</td> <td>29</td> <td>39</td> <td>25</td> <td>23</td></tr>
+          <tr><td>relativ</td> <td>7,9%</td> <td>6,4%</td> <td>6,4%</td> <td>6,4%</td>
+            <td>6,8%</td> <td>8,3%</td> <td>14,3%</td> <td>10,9%</td> <td>14,7%</td>
+            <td>9,4%</td> <td>8,6%</td></tr>
+        </table>
+        Teilgenommen haben 266&nbsp;Studierende. Der Notenschnitt liegt bei 2,92.</li>
+      <li class="info">26.02.2017: Ihr vorläufiges Ergebnis der Abschlussklausur vom
+        24.02.2017 wurde an das ZPA übertragen. Ihr vorläufiges Ergebnis der
+        Zusatzpräsenzübung vom 24.02.2017 ist auf Ihrer Ergebnisseite abrufbar. Alle
+        Angaben ohne Gewähr.<br />
+        Informationen zur Einsicht folgen vermutlich im Laufe der nächsten Woche.</li>
+      <li>22.02.2017: Die Abschlussklausur sowie eine Zusatzpräsenzübung finden am
+        kommenden Freitag, 24.02.2017, ab ca. 15:15&nbsp;Uhr statt. Die Abschlussklausur
+        wird im Audimaxgebäude in den Hörsälen Gr&nbsp;(1420|001), Ro&nbsp;(1420|002) und
+        AM&nbsp;(1420|210), die Zusatzpräsenzübung im Informatikzentrum in den Hörsälen
+        AH&nbsp;I&nbsp;(2350|009), AH&nbsp;IV&nbsp;(2354|030), AH&nbsp;V&nbsp;(2356|050)
+        geschrieben.<br />
+        <ul>
+          <li>Hörsaalverteilung <span class="important">Abschlussklausur</span> nach
+            Matrikelnummern:
+            <ul>
+              <li>Gr&nbsp;(1420|001): von 000000 bis 358999</li>
+              <li>Ro&nbsp;(1420|002): von 359000 bis 367299</li>
+              <li>AM&nbsp;(1420|210): von 367300 bis 999999</li>
+            </ul></li>
+          <li>Hörsaalverteilung <span class="important">Zusatzpräsenzübung</span> nach
+            Matrikelnummern:
+            <ul>
+              <li>AH&nbsp;I&nbsp;(2350|009): von 000000 bis 355799</li>
+              <li>AH&nbsp;IV&nbsp;(2354|030): von 355800 bis 368099</li>
+              <li>AH&nbsp;V&nbsp;(2356|050): von 368100 bis 999999</li>
+            </ul></li>
+        </ul>
+        Bitte seien Sie ein paar Minuten früher da, damit pünktlich begonnen werden kann,
+        und warten Sie vor dem Ihnen zugewiesenen Hörsaal. Sie werden von den
+        Aufsichtspersonen reingerufen. Bringen Sie zum Ausfüllen des Aufgabenbogens einen
+        dokumentenechten blauen oder schwarzen Stift mit. Denken Sie außerdem an Ihre
+        BlueCard, damit Sie sich ausweisen können.<br />
+        Bei der Abschlussklausur und der Zusatzpräsenzübung sind keinerlei Hilfsmittel
+        außer eines zweiten farbigen Stifts (nicht rot und nicht grün) erlaubt. Mit diesem
+        dürfen Sie Markierungen an Graphen anbringen; beachten Sie aber, dass diese
+        Markierungen als Notizen zählen und nicht gewertet werden.</li>
+      <li class="info">20.02.2017: Am morgigen Dienstag, 21.02., findet ab 14:45&nbsp;Uhr
+        im Hörsaal Fo&nbsp;1 (1820|201) eine Fragestunde statt.</li>
+      <li class="info">19.02.2017: Die Vorlesungsnotizen wurden nun zu einem
+        <a href="materials/Thomas_Diskrete_Strukturen_2017.pdf">Manuskript</a>
+        zusammengefasst.</li>
+      <li class="info">17.02.2017: Die Übungspunkte sind nun gemäß der Ankündigung vom
+        27.01. (Zulassung ab 115&nbsp;Punkten online, 85&nbsp;Punkten schriftlich und
+        bestandener PÜ oder WPÜ; Bonus ab 140+90=230&nbsp;Punkten und bestandener PÜ oder
+        WPÜ) ausgewertet worden. Sie finden Ihren Klausurstatus (Zulassung und
+        Bonusprozente, Klausuranmeldung) auf Ihrer
+        <a href="resquery.html">Ergebnisseite</a>. Bitte überprüfen Sie Ihren Status (auch
+        bzw. gerade dann, wenn Sie sich von der Klausur abgemeldet haben oder die
+        Zulassung nicht erreicht haben) und melden Sie sich bei Unstimmigkeiten umgehend
+        per E-Mail. (Dieser Status wird bei in der Zukunft liegenden Abmeldungen nicht
+        aktualisiert.)</li>
+      <li class="info">17.02.2017: <span class="important">Aus gegebenem Anlass weise ich
+        noch einmal darauf hin:</span> Sofern Sie an der Zusatzpräsenzübung
+        teilnehmen möchten, melden Sie sich bitte unbedingt beim (virtuellen) ZPA von der
+        Abschlussklausur am 24.02.2017 ab. (Hintergrund: Wenn Sie sich nicht eigenständig
+        abmelden, kriegen Sie anstatt einer Note den Vermerk "NZ" eingetragen. Dies hat
+        zur Folge, dass Sie sich anschließend nicht mehr zur Wiederholungsklausur am
+        05.04.2017 anmelden können.)</li>
+      <li class="info">13.02.2017: Wir haben uns dazu entschlossen, all denjenigen, welche
+        die Zulassungsvoraussetzungen knapp nicht erfüllt haben, eine zusätzliche Chance
+        im Rahmen einer Zusatzpräsenzübung zu geben. Diese wird parallel zur
+        Abschlussklausur am 24.02. stattfinden und den gesamten Stoff aus Vorlesungen und
+        Übungen behandeln. Teilnehmen dürfen alle Studierende, welche die
+        Zulassungsvoraussetzungen nicht erfüllen, aber in den Hausaufgaben mindestens
+        80&nbsp;Punkte online und mindestens 70&nbsp;Punkte schriftlich erreicht haben
+        (unabhängig davon, ob die Präsenzübung oder die Wiederholungspräsenzübung
+        bestanden wurde).<br />
+        Durch die Zusatzpräsenzübung haben Sie die Möglichkeit, eine Zulassung zur
+        Teilnahme an der Wiederholungsklausur am Mittwoch, 05.04.2017, zu erhalten. Die
+        Bonusregelung bleibt an die ursprünglichen Zulassungsvoraussetzungen
+        gebunden.<br />
+        Bitte <a href="examregistration.html">melden</a> Sie sich bis spätestens
+        <span class="important">Mittwoch, 15.02.2017, 23:59&nbsp;Uhr</span> an.<br />
+        <span class="important">Wichtig:</span> Sofern Sie an der Zusatzpräsenzübung
+        teilnehmen möchten, melden Sie sich bitte unbedingt beim (virtuellen) ZPA von der
+        Abschlussklausur am 24.02.2017 ab. (Hintergrund: Wenn Sie sich nicht eigenständig
+        abmelden, kriegen Sie anstatt einer Note den Vermerk "NZ" eingetragen. Dies hat
+        zur Folge, dass Sie sich anschließend nicht mehr zur Wiederholungsklausur am
+        05.04.2017 anmelden können.)</li>
+      <li class="info">13.02.2017: Ihr vorläufiges Ergebnis der Wiederholungspräsenzübung
+        vom 09.02.2017 ist nun auf Ihrer Ergebnisseite abrufbar. Alle Angaben ohne
+        Gewähr.</li>
+      <li class="info">13.02.2017: Die Einsicht zur Wiederholungspräsenzübung findet am
+        Mittwoch, 15.02.2017, ab 15:00&nbsp;Uhr in Hörsaal&nbsp;IV&nbsp;(1010|141) statt.
+        Bringen Sie zur Einsicht bitte Ihre BlueCard und etwas Zeit mit.</li>
+      <li class="info">08.02.2017: Die Wiederholungspräsenzübung findet morgen,
+        09.02.2017, ab ca. 18:15&nbsp;Uhr im Hörsaal AM&nbsp;(1420|210) statt. Bitte seien
+        Sie ein paar Minuten früher da, damit pünktlich begonnen werden kann. Sie werden
+        von den Aufsichtspersonen reingerufen. Bei der Präsenzübung sind keinerlei
+        Hilfsmittel erlaubt. Bringen Sie lediglich zum Ausfüllen des Aufgabenbogens einen
+        dokumentenechten blauen oder schwarzen Stift mit. Denken Sie außerdem an Ihre
+        BlueCard, damit Sie sich ausweisen können.</li>
+      <li class="info">02.02.2017: Die Fragestunde am Montag, 06.02., wird auf
+        18:15&nbsp;Uhr verschoben.</li>
+      <li class="info">02.02.2017: Am 09.02.2017 und 10.02.2017 finden keine Tutorien
+        statt.</li>
+      <li class="info">01.02.2017: Das letzte Übungsblatt&nbsp;12 ist online. Es enthält
+        sechs Bonusaufgaben im Onlinebereich. Maximal können Sie 31&nbsp;Bonuspunkte
+        erhalten. Abgabefrist ist Dienstag, 07.02.2017, 23:59&nbsp;Uhr. Beachten Sie in
+        Aufgabe&nbsp;72 und Aufgabe&nbsp;73 die Eingabeanweisung für reelle Zahlen.</li>
+      <li class="info">27.01.2017: Da diese Woche kein Übungsblatt erschienen ist, ergeben
+        sich folgende Änderungen:
+        <ul>
+          <li>Übungsblatt&nbsp;11 ist das letzte Übungsblatt, für welche die
+            Online-Aufgaben regulär gewertet werden. Es wird voraussichtlich ein weiteres
+            Übungsblatt&nbsp;12 mit Bonusaufgaben im Onlinebereich geben. Mit diesen
+            Bonusaufgaben können ggf. noch Defizite bei den Online-Aufgaben ausgeglichen
+            werden.</li>
+          <li>Mangels Zeit für eine Korrektur werden auf Übungsblatt&nbsp;12 keine
+            schriftliche Aufgaben enthalten sein. Die schriftlichen Aufgaben von
+            Übungsblatt&nbsp;11 werden nachträglich zu Bonusaufgaben erklärt; hierdurch
+            können ggf. noch Defizite bei den schriftlichen Aufgaben ausgeglichen werden.
+            Damit ist Übungsblatt&nbsp;10 das letzte Übungsblatt, für welche die
+            schriftlichen Aufgaben regulär gewertet werden.</li>
+          <li>Insgesamt wurden 200&nbsp;(reguläre) Punkte für Online-Aufgaben und
+            180&nbsp;(reguläre) Punkte für schriftliche Aufgaben vergeben.</li>
+          <li>Im Online-Bereich wurden (insbesondere ab Blatt 6) mehr Ergebnisaufgaben
+            gestellt als zu Beginn des Semesters eingeplant. Aus diesem Grund wird das
+            Zulassungskriterium im Online-Bereich auf 60% gesenkt.</li>
+          <li>Da es im Laufe des Semesters zu kleineren Fehlern bei Aufgabenstellungen und
+            Auswertungen gekommen ist und es am 13.01.2017 einen Serverausfall von ca.
+            einem halben Tag gab, wird das Zulassungskriterium zusätzlich um einen
+            kleinen Kulanzbonus verringert.</li>
+          <li>Insgesamt gelten folgende aktualisierte Zulassungsvoraussetzungen:
+            <ul>
+              <li>online: 115 von 200 (+ 55*) Punkten (zuvor angekündigt: 182 von
+                260 Punkten)</li>
+              <li>schriftlich: 85 von 180 (+ 38*) Punkten (zuvor angekündigt: 110 von 220
+                Punkten)</li>
+              <li>Bestehen der Präsenzübung oder der Wiederholungspräsenzübung (mindestens
+                50% der maximal erreichbaren Punkte)</li>
+            </ul></li>
+          <li>Die Bonusregelung wird nur um die verringerten Punktzahlen von Blatt&nbsp;11
+            und Blatt&nbsp;12 sowie dem nicht erscheinenden Blatt&nbsp;13 angepasst. Das
+            bedeutet: Sofern Sie die Zulassungsvoraussetzungen erfüllen, erhalten Sie
+            0,07% der Klausurpunkte für jeden Übungspunkt über der Grenze von
+            140+90=230&nbsp;Übungspunkten.</li>
+        </ul></li>
+      <li class="info">24.01.2017: Aus gesundheitlichen Gründen finden in dieser Woche,
+        also am Mittwoch, 25.01.2017, und Donnerstag, 26.01.2017, keine Vorlesungen statt.
+        Ferner erscheint heute kein Übungsblatt. Die Zulasssungsbedingungen werden
+        entsprechend angepasst (Details folgen). Die Fragestunde am Montag, 30.01.2017,
+        fällt ebenfalls aus. Die Tutorien am Donnerstag, 26.01.2017, und Freitag,
+        27.01.2017, finden statt.</li>
+      <li class="info">24.01.2017: Die am 09.02. stattfindende Wiederholungspräsenzübung
+        wird den Stoff bis einschließlich Abschnitt&nbsp;16 (Kombinatorik) behandeln.</li>
+      <li class="info">24.01.2017: Ab sofort können Sie sich zur Wiederholungspräsenzübung
+        am Donnerstag, 09.02.2017 <a href="examregistration.html">anmelden</a>. Eine
+        Teilnahme ist nur möglich, wenn Sie die Präsenzübung vom 15.12.2016 nicht
+        bestanden haben und die sonstigen Zulassungsvoraussetzungen erfüllen. Bitte melden
+        Sie sich bis spätestens <span class="important">Dienstag, 31.01.2017,
+        23:59&nbsp;Uhr</span> an.</li>
+      <li class="info">24.01.2017: Die Nachkorrekturen nach der Einsicht zur Präsenzübung
+        sind abgeschlossen.</li>
+      <li class="info">18.01.2017: In Aufgabe&nbsp;55 gab es einige Fehler bei der
+        Auswertung, bei welcher die Lösung eines definierten Ausdrucks als "ND" angegeben
+        wurde. Diese Fehler wurden nun korrigiert.</li>
+      <li class="info">18.01.2017: Am Donnerstag, 19.01.2017 findet keine Vorlesung
+        statt.</li>
+      <li class="info">14.01.2017: In Aufgabe&nbsp;61 gab es einen Tippfehler, welcher nun
+        korrigiert wurde: In Bedingung&nbsp;(b) hieß es fälschlicherweise "Sol(A, b)"
+        statt "Sol(A, 0)".</li>
+      <li class="info">08.01.2017: In Aufgabe&nbsp;48 gab es ein Anzeigeproblem in der
+        pdf-Version. Das geschwungene&nbsp;O, welches als Abkürzung für die Menge der
+        Bahnen verwendet wurde, sah hier (fast) aus wie ein normales&nbsp;O. Zur besseren
+        Unterscheidung wurde das geschwungene&nbsp;O in der Aufgabenstellung daher nun
+        durch ein geschwungenes&nbsp;P ersetzt.<br />
+        Verwenden Sie für Ihre Lösung zu dieser Aufgabe konsistent entweder ein
+        geschwungenes&nbsp;O oder ein geschwungenes&nbsp;P.</li>
+      <li class="info">26.12.2016: Die angekündigten Bonusaufgaben sind ab sofort auf einem
+        zusätzlichen <a href="exquery.html">Übungsblatt&nbsp;9</a> zu finden. Dieses kann
+        bis Dienstag, 17.01.2017, 14:00&nbsp;Uhr bearbeitet werden kann.</li>
+      <li class="info">21.12.2016: Das DS-Team wünscht allen besinnliche Weihnachtstage
+        sowie einen guten Rutsch ins neue Jahr&nbsp;2017.</li>
+      <li class="info">21.12.2016: Die Einsicht zur Präsenzübung findet am Freitag,
+        20.01.2017, ab 16:00&nbsp;Uhr in Hörsaal&nbsp;III&nbsp;(1010|107) statt. Bringen
+        Sie zur Einsicht bitte Ihre BlueCard und etwas Zeit mit. Bitte teilen Sie sich
+        zeitlich wie folgt auf:
+        <ul>
+          <li>ab 16:00&nbsp;Uhr: von 000000 bis 355999</li>
+          <li>ab 17:00&nbsp;Uhr: von 356000 bis 367099</li>
+          <li>ab 18:00&nbsp;Uhr: von 367100 bis 369099</li>
+          <li>ab 19:00&nbsp;Uhr: von 369100 bis 999999</li>
+        </ul>
+        Um die Wartezeit zu minimieren, bitten wir um die Einhaltung folgender Regeln:
+        <ul>
+          <li>Kommen Sie keinesfalls früher als im Ihnen zugeteilten Zeitraum.</li>
+          <li>Beschränken Sie Ihre Einsichtszeit auf zehn Minuten.</li>
+          <li>Reden Sie während der Einsicht nicht mit Ihren Kommilitonen.</li>
+          <li>Belegen Sie - wie bei der Klausur - ausschließlich jede zweite Reihe
+            (vermutlich werden es die Reihen mit den Nummern 3, 5 und 7 sein), so dass wir
+            bei Fragen an Ihren Platz kommen können.</li>
+          <li>Die vorderste Reihe dient der Ausgabe und Rückgabe der Präsenzübungen.
+            Halten Sie zur Ausgabe bitte Ihre BlueCard bereit.</li>
+        </ul></li>
+      <li class="info">17.12.2016: Ihr vorläufiges Ergebnis der Präsenzübung vom
+        15.12.2016 ist nun auf Ihrer Ergebnisseite abrufbar. Alle Angaben ohne
+        Gewähr.<br />
+        In Aufgabe&nbsp;1 gab es einen Fehler, welcher zu einem nicht definierten Objekt
+        führte (es wurde nach Pot({1, 2, 3}) / =_f gefragt, die Startmenge von f war
+        jedoch Pot({1, 2, 3}) \ {&empty;}). Die eigentlich erwartete Lösung sowie "nicht
+        definiert" als Antwort wurden als korrekt bewertet. Ferner wird aus diesem Grund
+        die Präsenzübung als bestanden gewertet, wenn 21 (von 44) Punkten erreicht
+        wurden.<br />
+        Informationen zur Einsicht folgen in den kommenden Tagen.</li>
+      <li class="info">14.12.2016: Am Donnerstag, 15.12., und Freitag, 16.12., finden
+        weder eine Vorlesung noch Tutorien statt. Die nächste Veranstaltung ist die
+        Fragestunde am Montag, 19.12.2016. Am Mittwoch, 21.12.2016, findet die nächste
+        Vorlesung statt, sie wird die letzte vor Weihnachten sein.</li>
+      <li class="info">14.12.2016: In Aufgabe&nbsp;42 wurde leider zunächst ein falsches
+        Polynom (X^3 + 2) verwendet. Bitte aktualisieren Sie ggf. Ihr Blatt.</li>
+      <li class="info">14.12.2016: Die Präsenzübung findet am kommenden Donnerstag,
+        15.12.2016, ab ca. 18:00&nbsp;Uhr in den Hörsälen Fo&nbsp;1&nbsp;(1820|201),
+        TEMP1&nbsp;(1515|001), II&nbsp;(1010|201), Gr&nbsp;(1420|001) und
+        AM&nbsp;(1420|210) statt. Hörsaalverteilung nach
+        Matrikelnummern:
+        <ul>
+          <li>Fo&nbsp;1&nbsp;(1820|201): von 000000 bis 356199</li>
+          <li>TEMP1&nbsp;(1515|001): von 356200 bis 364999</li>
+          <li>II&nbsp;(1010|201): von 365000 bis 366889</li>
+          <li>Gr&nbsp;(1420|001): von 366890 bis 367999</li>
+          <li>AM&nbsp;(1420|210): von 368000 bis 999999</li>
+        </ul>
+        Bitte seien Sie ein paar Minuten früher da, damit pünktlich
+        begonnen werden kann, und warten Sie vor dem Ihnen zugewiesenen Hörsaal. Sie
+        werden von den Aufsichtspersonen reingerufen. Bei der Präsenzübung sind keinerlei
+        Hilfsmittel erlaubt. Bringen Sie lediglich zum Ausfüllen des Aufgabenbogens einen
+        dokumentenechten blauen oder schwarzen Stift mit. Denken Sie außerdem an Ihre
+        BlueCard, damit Sie sich ausweisen können.</li>
+      <li class="info">13.12.2016: <a href="exquery.html">Übungsblatt 7</a> ist online.
+        Bearbeitung wie üblich bis kommenden Dienstag, 20.12.2016, um 14:00&nbsp;Uhr.</li>
+      <li class="info">06.12.2016: Am Donnerstag und Freitag gibt es in den Tutorien die
+        Möglichkeit, Fragen im Hinblick auf die nächste Woche stattfindende Präsenzübung
+        zu stellen.<br />
+        Schicken Sie Ihre Fragen nach Möglichkeit bitte bis Mittwoch Abend (für die
+        Donnerstagstutorien) bzw. bis Donnerstag Abend (für die Freitagstutorien) per
+        E-Mail an Ihre Tutorin bzw. Ihren Tutor. Dadurch kann Ihre Tutorin bzw. Ihr Tutor
+        sich einerseits spezifisch auf Ihre Fragen vorbereiten und andererseits
+        gegebenenfalls eine Vorauswahl treffen.<br />
+        Sollten Sie die E-Mail-Adresse Ihrer Tutorin bzw. Ihres Tutors verlegt haben, so
+        finden Sie diese über den Link auf Ihrer <a href="resquery.html">Ergebnisseite</a>
+        hinterlegt.</li>
+      <li class="info">04.12.2016: In Aufgabe&nbsp;36(b) wurde die Voraussetzung "n > = 2"
+        ergänzt.</li>
+      <li class="info">03.12.2016: In den Vorlesungsnotizen zu
+        <a href="materials/8_induktion_und_rekursion.pdf">Abschnitt&nbsp;8 (Induktion und
+        Rekursion)</a> gab es einige Änderungen und Ergänzungen.</li>
+      <li class="info">01.12.2016: Die am 15.12. stattfindende Präsenzübung wird den Stoff
+        bis einschließlich Abschnitt&nbsp;10 (Teilbarkeitslehre) behandeln.</li>
+      <li class="info">01.12.2016: Die Fragestunde am Montag (10:15-11:45&nbsp;Uhr im
+        TEMP1&nbsp;(1515|001)) findet auch weiterhin statt.</li>
+      <li class="info">29.11.2016: Ab sofort können Sie sich zur Präsenzübung am
+        Donnerstag, 15.12.2016 <a href="examregistration.html">anmelden</a>. Bitte melden
+        Sie sich bis spätestens <span class="important">Dienstag, 06.12.2016,
+        23:59&nbsp;Uhr</span> an.</li>
+      <li class="info">28.11.2016: Noch einmal der <span class="important">Hinweis zu
+        MC-Aufgaben</span> wie etwa Aufgabe&nbsp;25: Beachten Sie, dass die Vorauswahl "-"
+        bei den Online-Aufgaben keiner Lösungsabgabe für die jeweilige Teilaufgabe
+        entspricht. Insbesondere müssen Sie daher bei Aufgabe&nbsp;25 diese Vorauswahl
+        deaktivieren, sofern Sie eine Antwort abgeben möchten. Wenn Ihre Abgabe lauten
+        soll, dass keiner der angegebenen Werte zutrifft, so müssen alle Kästchen
+        deaktiviert sein.</li>
+      <li class="info">22.11.2016: Es gab in Aufgabe&nbsp;13 systematische Fehler
+        bei der Auswertung einiger Varianten der Form "{(x, ...) | x in N} von N nach N"
+        sowie der Form "{(..., y) | y in Z} von Z nach Z". Diese Fehler wurden nun
+        korrigiert.</li>
+      <li class="info">20.11.2016: Nach Beispiel&nbsp;(4.5) wurde ein neues Beispiel zur
+        Reflexivität von Relationen eingefügt.</li>
+      <li class="info">17.11.2016: Es gab in Aufgabe&nbsp;13 einen systematischen Fehler
+        bei der Auswertung einiger Varianten der Form "{(x, ...) | x in N} von N nach N".
+        Dieser Fehler wurde nun korrigiert.</li>
+      <li class="info">17.11.2016: Die heutige Vorlesung findet statt.</li>
+      <li class="info">16.11.2016: Die heutige Vorlesung findet statt.</li>
+      <li class="info">14.11.2016: Aus gegebenem Anlass: Überprüfen Sie bitte vor der
+        Abgabefrist morgen noch einmal, ob Ihre Eingabe dem richtigen Eingabeformat
+        genügt.</li>
+      <li class="info">12.11.2016: Die Fragestunde am Montag, 14.11.2016, findet statt und
+        wird von Tutor Oliver Feith gehalten.</li>
+      <li class="info">10.11.2016: Die heutige Vorlesung findet statt.</li>
+      <li class="info">09.11.2016: Aus gesundheitlichen Gründen kann es am Donnerstag,
+        10.11.2016, (und bei Bedarf auch in der Folgewoche) zu kurzfristigen Ausfällen
+        kommen. Bitte informieren Sie sich, bevor Sie den Hörsaal aufsuchen, auf dieser
+        Webseite, ob die Vorlesung/Fragestunde stattfindet.</li>
+      <li class="info">09.11.2016: Die Vorlesungen finden ab sofort mittwochs und
+        donnerstags statt und werden nicht mehr wiederholt. Am Montag morgen wird eine
+        Fragestunde angeboten.</li>
+      <li class="info">07.11.2016: Die nächste Vorlesung ist Vorlesung&nbsp;6 am Mittwoch,
+        09.11.2016. Da Vorlesung&nbsp;5(B) nur von relativ wenigen Leuten besucht wurde,
+        wird es von Vorlesung&nbsp;6 nur dann eine Wiederholung geben, wenn nicht alle
+        Interessenten die Veranstaltung am 09.11.2016 besuchen können.</li>
+      <li class="info">04.11.2016: Tutorium&nbsp;8 bei Antonia Thiemeyer wird am Freitag,
+        11.11., einmalig in den Hörsaal H&nbsp;212&nbsp;(1400|212) verlegt.</li>
+      <li class="info">03.11.2016: Am Montag, 07.11.2016, 10:15&nbsp;Uhr findet
+        Vorlesung&nbsp;5(A) statt; die Wiederholung, Vorlesung 05(B) folgt am selben Tag
+        abends um 18:15&nbsp;Uhr (ebenfalls im TEMP1&nbsp;(1515|001)).</li>
+      <li class="info">03.11.2016: Der Bug in der MathJax-Variante zu Aufgabe&nbsp;9
+        sollte nun behoben sein.</li>
+      <li class="info">03.11.2016: Noch einmal der <span class="important">Hinweis zu
+        MC-Aufgaben</span> wie etwa Aufgabe&nbsp;7: Beachten Sie, dass die Vorauswahl "-"
+        bei den Online-Aufgaben keiner Lösungsabgabe für die jeweilige Teilaufgabe
+        entspricht. Insbesondere müssen Sie daher bei Aufgabe&nbsp;7 diese Vorauswahl
+        deaktivieren, sofern Sie eine Antwort abgeben möchten. Wenn Ihre Abgabe lauten
+        soll, dass keiner der angegebenen Werte zutrifft, so müssen alle Kästchen
+        deaktiviert sein.</li>
+      <li class="info">02.11.2016: Bei Aufgabe&nbsp;9 werden momentan einige Fragen in der
+        MathJax-Variante leider nicht angezeigt. Bitte verwenden Sie hierfür die
+        HTML-Variante.</li>
+      <li class="info">29.10.2016: Die nächste Vorlesung ist Vorlesung&nbsp;4(A) am
+        Montag, 31.10.2016. <span class="important">Am Mittwoch, 02.11.2016, findet keine
+        Vorlesung statt.</span> Die Wiederholung, Vorlesung&nbsp;4(B), folgt daher erst am
+        Donnerstag, 03.11.2016. In der Folgewoche wird die Wiederholung von
+        Vorlesung&nbsp;5(A) (Montag, 07.11.2016, 10:15&nbsp;Uhr) nach Möglichkeit (und
+        Notwendigkeit) noch am gleichen Tag um 18:15&nbsp;Uhr stattfinden. Weitere
+        Informationen folgen kurzfristig.</li>
+      <li class="info">24.10.2016: Auf Grund des Feiertags am Dienstag, 01.11.2016, ist
+        <a href="exquery.html">Übungsblatt&nbsp;1</a> bis Montag, 31.10.2016,
+        17:30&nbsp;Uhr zu bearbeiten.</li>
+      <li class="info">24.10.2016: Beachten Sie, dass bei den schriftlichen Aufgaben
+        grundsätzlich alle Schritte ausreichend zu begründen sind.</li>
+      <li class="info">24.10.2016: In Aufgabe&nbsp;4 werden Begriffe eingeführt, welche
+        bisher noch nicht in der Vorlesung drankamen (welche in diesem Fall aber ähnlich
+        zu den bereits eingeführten Begriffen "Tautologie" und "Kontradiktion" sind).
+        Solche Aufgaben kommen nicht auf jedem Übungsblatt vor, aber immer mal wieder. Bei
+        diesen Aufgaben sollen Sie zeigen, dass Sie in der Lage sind, sich auf Grundlage
+        der Vorlesungsinhalte eigenständig neue Begriffe anzueignen und zu verstehen. Es
+        ist möglich, dass diese Begriffe auch in anderen Aufgaben (wie hier etwa in
+        Aufgabe&nbsp;5) oder in der Klausur Verwendung finden.</li>
+      <li class="info">24.10.2016: Die Anmeldung ist abgeschlossen und die Teilnehmer
+        sind in die Tutorien eingeteilt. Sie erfahren Ihre Gruppennummer, indem Sie sich
+        auf Ihrer <a href="resquery.html">Ergebnisseite</a> einloggen. Leider konnten
+        nicht alle Wünsche berücksichtigt werden. <span class="important">Bitte geben Sie
+        bei Ihren anderen Veranstaltungen, bei denen noch keine Zuteilung stattgefunden
+        hat, Ihre Präferenzen so an bzw. ändern Sie diese so ab, dass Sie möglichst keine
+        (weiteren) Überschneidungen erhalten.</span></li>
+      <li class="info">22.10.2016: Wie angekündigt wird ein Tutoriumstermin freitags
+        um 10:15&nbsp;Uhr eingerichtet, welcher einen Termin um 14:15&nbsp;Uhr ersetzt.
+        Dieser Termin wird in Kürze bei den eingeteilten Studierenden als Tutorium&nbsp;9
+        auftauchen. Die in den alten Tutorien&nbsp;9 und&nbsp;10 verbliebenen Teilnehmer
+        werden zu einem neuen Tutorium&nbsp;10 zusammengelegt. Das neue Tutorium&nbsp;9
+        wird von Oliver Feith geleitet und findet im Hörsaal&nbsp;R&nbsp;140 statt. Das
+        neue Tutorium&nbsp;10 wird von Carlotta Kollera geleitet und findet im
+        Hörsaal&nbsp;IV statt. In beide Tutorien kann ab sofort nur noch mit Tauschpartner
+        gewechselt werden.</li>
+      <li class="info">21.10.2016: Tutorium&nbsp;6 bei Marc Meskes wird am Freitag,
+        28.10., einmalig in den Fo&nbsp;6&nbsp;(1820|206) verlegt.</li>
+      <li class="info">19.10.2016: Es kann sehr wahrscheinlich ein Tutoriumstermin
+        freitags um 10:15&nbsp;Uhr eingerichtet werden (Raum&nbsp;R&nbsp;140), welcher
+        eine der Tutoriumsgruppen&nbsp;9 oder&nbsp;10 ersetzen soll. Sollten Sie Interesse
+        an einem Wechsel haben, schreiben Sie dem Dozenten bitte eine kurze
+        <a href="mailto:sebastian.thomas@math.rwth-aachen.de">E-Mail</a> unter Angabe von
+        Namen, Matrikelnummer und aktueller Gruppennummer. Da es vermutlich viele
+        Interessenten gibt, können (zumindest vorerst) keine Teilnehmer der anderen
+        Gruppen in dieses Tutorium wechseln. Bitte wechseln Sie fairerweise nur, sofern
+        ein Besuch um 14:15 wegen einer Überschneidung mit der Vorlesung Analysis für
+        Informatiker unumgänglich ist. Es gilt <span class="important">First Come First
+        Serve</span>. Die verbleibenden Teilnehmer aus den aktuellen
+        Tutoriumsgruppen&nbsp;9 und&nbsp;10 würden dann zu einer Tutoriumsgruppe
+        zusammengelegt werden. Sollten sich überraschenderweise nicht genügend
+        Interessenten finden, kann das Tutorium leider nicht eingerichtet werden.</li>
+      <li class="info">19.10.2016: Die Einteilung derjenigen Studierenden, welche bisher
+        noch nicht eingeteilt wurden, erfolgt Anfang kommender Woche.</li>
+      <li class="info">19.10.2016: Die Tutorien beginnen nächste Woche, also am
+        Donnerstag, 27.10., und Freitag, 28.10.</li>
+      <li class="info">18.10.2016: Die Tutoriumsgruppen sind nun eingeteilt. Sie erfahren
+        Ihre Gruppennummer, indem Sie sich auf Ihrer
+        <a href="resquery.html">Ergebnisseite</a> einloggen. Leider konnten nicht alle
+        Wünsche berücksichtigt werden. <span class="important">Bitte geben Sie bei Ihren
+        anderen Veranstaltungen, bei denen noch keine Zuteilung stattgefunden hat, Ihre
+        Präferenzen so an bzw. ändern Sie diese so ab, dass Sie möglichst keine (weiteren)
+        Überschneidungen erhalten.</span></li>
+      <li class="info">18.10.2016: Da die regulären Übungen erst in der kommenden Woche
+        beginnen, wurde die Abgabefrist des freiwilligen Übungsblatt&nbsp;0 bis Sonntag,
+        23.10.2016, 23:59&nbsp;Uhr verlängert.</li>
+      <li class="info">17.10.2016: Jede Vorlesung wird vorerst zwei mal gehalten. Sie
+        finden auf der Seite mit den <a href="lecture_notes.html">Vorlesungsnotizen</a>
+        jeweils den aktuellen Stand der Vorlesung.</li>
+      <li class="info">17.10.2016: Die Einteilung in die Tutorien wird voraussichtlich am
+        Dienstag, 18.10.2016 stattfinden. Bitte <a href="registration.html">melden</a> Sie
+        sich daher möglichst noch heute an, sofern noch nicht geschehen. (Die Möglichkeit
+        zur Anmeldung wird auch danach noch eine Weile bestehen bleiben, allerdings wird
+        es dann noch schwieriger, Ihren Wünschen hinsichtlich der Tutorien entgegen zu
+        kommen.)</li>
+      <li class="info">17.10.2016: Die <a href="lecture_notes.html">Vorlesungsnotizen</a>
+        zur ersten Vorlesung sind online.</li>
+      <li class="info">11.10.2016: Die erste Vorlesung findet am 17.10.2016,
+        10:15&nbsp;Uhr im Hörsaal
+        <a href="https://www.campus.rwth-aachen.de/rwth/all/room.asp?room=1515%7C001">TEMP1&nbsp;(1515|001)</a>
+        statt.</li>
+      <li class="info">11.10.2016: Das
+        <a href="materials/Thomas_Diskrete_Strukturen_2015.pdf">Manuskript</a> ist
+        veraltet und dient nur einem vorläufigen Überblick über die meisten Inhalte der
+        Vorlesung. Ein Ausdruck wird nicht empfohlen.</li>
+      <li class="info">11.10.2016: Die Übungsblätter lassen sich in drei verschiedenen
+        Versionen abrufen: HTML, MathJax und PDF.
+        <ul>
+          <li>Die HTML-Variante ist für die Anzeige auf klassischen Bildschirmen und der
+            Abgabe der Online-Aufgaben ausgelegt; hier werden Ihnen die Aufgaben durch
+            vorab durch den Server berechnete Bilder angezeigt.</li>
+          <li>Die PDF-Variante entspricht einem klassischen Aufgabenblatt, welches sich
+            insbesondere gut zum Ausdrucken eignet.</li>
+          <li>Die MathJax-Variante stellt eine Alternative zur HTML-Variante dar, welche
+            ohne vorab berechnete Bilder auskommt. Die Anzeigequalität ist etwas besser
+            als bei der HTML-Variante, insbesondere auf mobilen Devices. Um diese Variante
+            zu verwenden, muss JavaScript aktiviert sein. Die MathJax-Variante wird in
+            diesem Semester zum ersten Mal angeboten und ist daher als Betatest anzusehen.
+            Verwenden Sie im Zweifelsfall die HTML-Variante, sofern es zu Anzeigeproblemen
+            kommt. Wir freuen uns über Feedback.</li>
+        </ul></li>
+      <li class="info">11.10.2016: Ein freiwilliges Übungsblatt&nbsp;0 ist ab sofort
+        <a href="exquery.html">verfügbar</a>. Sie können es bis Mittwoch, 19.10.2016,
+        23:59&nbsp;Uhr bearbeiten. Schulwissen der gymnasialen Mittelstufe sollte zur
+        Bearbeitung ausreichen. Das Übungsblatt dient in erster Linie dazu, sich mit dem
+        System der Online-Aufgaben vertraut zu machen. Aus diesem Grund wird die
+        Bearbeitung mit Nachdruck empfohlen.</li>
+      <li class="info">11.10.2016: Beachten Sie, dass die Vorauswahl "-" bei den
+        Online-Aufgaben keiner Lösungsabgabe für die jeweilige Teilaufgabe entspricht.
+        Insbesondere müssen Sie daher bei Aufgabe&nbsp;-1 diese Vorauswahl deaktivieren,
+        sofern Sie eine Antwort abgeben möchten. Wenn Ihre Abgabe lauten soll, dass keiner
+        der angegebenen Werte eine Lösung darstellt, so müssen alle Kästchen deaktiviert
+        sein.</li>
+      -->
+
+      <!-- template Notenspiegel
+      <li class="info">XX.XX.2017: Vorläufiger Notenspiegel zur Abschlussklausur
+        vom&nbsp;XX.XX.2017:
+        <table>
+          <tr><td>Note</td> <td>1,0</td> <td>1,3</td> <td>1,7</td> <td>2,0</td>
+            <td>2,3</td> <td>2,7</td> <td>3,0</td> <td>3,3</td> <td>3,7</td> <td>4,0</td>
+            <td>5,0</td></tr>
+          <tr><td>Mindestleistung</td> <td>95%</td> <td>90%</td> <td>85%</td> <td>80%</td>
+            <td>75%</td> <td>70%</td> <td>65%</td> <td>60%</td> <td>55%</td> <td>50%</td>
+            <td>0%</td></tr>
+          <tr><td>absolut</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+            <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td></tr>
+          <tr><td>relativ</td> <td>X,X%</td> <td>X,X%</td> <td>X,X%</td> <td>X,X%</td>
+            <td>X,X%</td> <td>X,X%</td> <td>X,X%</td> <td>X,X%</td> <td>X,X%</td>
+            <td>X,X%</td> <td>X,X%</td></tr>
+        </table>
+        Teilgenommen haben XXX&nbsp;Studierende. Der Notenschnitt liegt bei X,XX.</li>
+      <li class="info">XX.XX.2017: Notenspiegel zur Veranstaltung:
+        <table>
+          <tr><td>Note</td> <td>sehr gut</td> <td>gut</td> <td>befriedigend</td>
+            <td>ausreichend</td> <td>nicht ausreichend</td></tr>
+          <tr><td>Mindestleistung</td> <td>90%</td> <td>75%</td> <td>60%</td> <td>50%</td>
+            <td>0%</td></tr>
+          <tr><td>absolut</td> <td>XX</td> <td>XX</td> <td>XX</td> <td>XX</td>
+            <td>XX</td></tr>
+          <tr><td>relativ</td> <td>XX,X%</td> <td>XX,X%</td> <td>XX,X%</td> <td>XX,X%</td>
+            <td>XX,X%</td></tr>
+        </table>
+        Teilgenommen haben XXX&nbsp;Studierende. Der Notenschnitt liegt bei X,XX.<br />
+        Als Teilnehmer wurden diejenigen Studierenden berücksichtigt, die wenigstens eine
+        der beiden Klausuren mitgeschrieben haben. Für diejenigen, welche bei beiden
+        Klausuren mitgeschrieben haben, wurde die bessere der beiden Noten gewertet.</li>
+      -->
+    </ul>
+
+    <hr />
+
+    <p class="foot">Bei Fragen wenden Sie sich bitte an: <br />
+        <br /><a href="mailto:sebastian.thomas@math.rwth-aachen.de">
+Sebastian Thomas (sebastian.thomas@math.rwth-aachen.de)</a>
+ 
+    </p>
+
+    <p class="foot">
+      <a href="http://validator.w3.org/check/referer">
+<img src="images/valid-xhtml10.png" alt="Valid XHTML 1.0!" 
+     height="31" width="88" /></a>
+ <a href="http://www.math.rwth-aachen.de/~OKUSON/">
+      (OKUSON 1.4.3)</a>
+      <a href="techinfo.html">Technische Informationen</a>
+    </p>
+
+    
+  </body>
+</html>
+<!-- Copyright 2003 Frank Lübeck and Max Neunhöffer -->
