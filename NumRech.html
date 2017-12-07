@@ -1,5 +1,6 @@
 
 
+
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'html' -->
 <!-- FILE NAME SUGGESTIONS:
@@ -11,14 +12,15 @@
 <!-- BEGIN OUTPUT from 'themes/igpm/templates/layout/html.html.twig' -->
 <!DOCTYPE html><html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="no-js adaptivetheme">
   <head><meta charset="utf-8" />
+<script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://www.igpm.rwth-aachen.de/piwik/" : "http://www.igpm.rwth-aachen.de/piwik/");_paq.push(["setSiteId", "1"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(["trackPageView"]);_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"piwik.js";s.parentNode.insertBefore(g,s);})();</script>
 <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="/themes/igpm/favicon.ico" type="image/vnd.microsoft.icon" />
-<link rel="canonical" href="/numrech" />
+<link rel="canonical" href="/studium/numrech" />
 <link rel="shortlink" href="/node/59" />
-<link rel="revision" href="/numrech" />
+<link rel="revision" href="/studium/numrech" />
 
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com"><title>Numerisches Rechnen | IGPM</title>
     <style media="all">
@@ -475,7 +477,7 @@
    x node.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/igpm/node.html.twig' -->
-<article data-history-node-id="59" role="article" about="/numrech" typeof="schema:WebPage" class="node node--id-59 node--type-page node--view-mode-full">
+<article data-history-node-id="59" role="article" about="/studium/numrech" typeof="schema:WebPage" class="node node--id-59 node--type-page node--view-mode-full">
   <div class="node__container">
 
 
@@ -614,7 +616,45 @@ Die Vorlesung richtet sich nach dem <a href="http://www.igpm.rwth-aachen.de/Dahm
    x region.html.twig
 -->
 <!-- BEGIN OUTPUT from 'themes/igpm/templates/layout/region.html.twig' -->
-<div  data-at-region="3" data-at-block-count="2" class="l-r region pr-main__sidebar-second">
+<div  data-at-region="3" data-at-block-count="3" class="l-r region pr-main__sidebar-second">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--studium.html.twig
+   * block--system-menu-block--studium.html.twig
+   x block--system-menu-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/igpm/templates/block/block--system-menu-block.html.twig' -->
+<nav role="navigation" aria-labelledby="block-studium-menu" id="block-studium" class="l-bl block block-menu block-config-provider--system block-plugin-id--system-menu-blockstudium has-title">
+  <div class="block__inner block-menu__inner">
+
+    
+    <h2 class="block__title block-menu__title" id="block-studium-menu"><span>Studium</span></h2>
+    <div class="block__content block-menu__content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__studium' -->
+<!-- FILE NAME SUGGESTIONS:
+   * menu--studium.html.twig
+   x menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/igpm/templates/navigation/menu.html.twig' -->
+<ul class="menu odd menu-level-1 menu-name--studium">        <li class="menu__item menu__item-title--mathematik" id="mlid-mathematik">
+          <span class="menu__link--wrapper"><a href="/studium/mathe-ws" data-drupal-link-system-path="node/323">Mathematik</a></span></li>        <li class="menu__item menu__item-title--informatik-und-physik" id="mlid-informatik-und-physik">
+          <span class="menu__link--wrapper"><a href="/studium/informatik-ws" data-drupal-link-system-path="node/324">Informatik und Physik</a></span></li>        <li class="menu__item menu__item-title--ingenieure" id="mlid-ingenieure">
+          <span class="menu__link--wrapper"><a href="/studium/ingenieure-ws" data-drupal-link-system-path="node/325">Ingenieure</a></span></li>        <li class="menu__item menu__item-title--architekten" id="mlid-architekten">
+          <span class="menu__link--wrapper"><a href="/studium/dg" data-drupal-link-system-path="node/326">Architekten</a></span></li></ul>
+<!-- END OUTPUT from 'themes/igpm/templates/navigation/menu.html.twig' -->
+
+</div></div>
+</nav>
+
+<!-- END OUTPUT from 'themes/igpm/templates/block/block--system-menu-block.html.twig' -->
+
+
 
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'block' -->
@@ -728,13 +768,14 @@ Die Vorlesung richtet sich nach dem <a href="http://www.igpm.rwth-aachen.de/Dahm
 
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"ajaxPageState":{"theme":"igpm","libraries":"at_core\/at.accordion,at_core\/at.breakpoints,at_core\/at.fastclick_initialize,at_core\/at.livereload,at_core\/at.responsivelists,at_core\/at.responsivemenus,at_core\/at.settings,at_core\/at.slideshow_settings,at_core\/at.windowsize,cycle2\/cycle2,igpm\/base,igpm\/breadcrumb,igpm\/color,igpm\/comment,igpm\/contact,igpm\/custom_css,igpm\/custom_css_file,igpm\/fontfaceobserver,igpm\/fonts,igpm\/igpm.layout.page,igpm\/image_styles,igpm\/responsive_menus,igpm\/responsive_menus_accordion,igpm\/responsive_menus_dropmenu,igpm\/responsive_menus_slidedown,igpm\/responsive_tables,igpm\/search,igpm\/slideshow_styles,igpm\/taxonomy,igpm\/title_styles,system\/base"},"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/59","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","igpm":{"at_slideshows":{"igpm-slideshow-0":{"animation":"slide","direction":"horizontal","smoothheight":0,"slideshowspeed":"4000","animationspeed":"600","controlnav":1,"directionnav":1,"pauseonaction":1,"pauseonhover":0,"animationloop":1,"reverse":0,"randomize":0,"autostart":1,"initdelay":"","easing":"swing","usecss":0,"touch":1,"video":0,"prevtext":"Previous","nexttext":"Next","slideshow_class":".igpm-slideshow-0","selector":".slides \u003E li"}},"at_responsivemenus":{"bp":"all and (min-width: 60.0625em)","default":"ms-slidedown","responsive":"ms-dropmenu","acd":{"acd_load":true,"acd_default":true,"acd_responsive":false,"acd_both":false}},"at_breakpoints":{"at_core_simple_wide":{"breakpoint":"wide","mediaquery":"all and (min-width: 60.0625em)"},"at_core_simple_tablet-isolate":{"breakpoint":"tablet","mediaquery":"all and (min-width: 45.0625em) and (max-width: 60em)"},"at_core_simple_mobile":{"breakpoint":"mobile","mediaquery":"all and (max-width: 45em)"}}},"user":{"uid":0,"permissionsHash":"a001b12ee327473f5b7fcc514e8c7c2e070941f205b25aeb906a711495c585b2"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/59","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"theme":"igpm","libraries":"at_core\/at.accordion,at_core\/at.breakpoints,at_core\/at.fastclick_initialize,at_core\/at.livereload,at_core\/at.responsivelists,at_core\/at.responsivemenus,at_core\/at.settings,at_core\/at.slideshow_settings,at_core\/at.windowsize,cycle2\/cycle2,igpm\/base,igpm\/breadcrumb,igpm\/color,igpm\/comment,igpm\/contact,igpm\/custom_css,igpm\/custom_css_file,igpm\/fontfaceobserver,igpm\/fonts,igpm\/igpm.layout.page,igpm\/image_styles,igpm\/responsive_menus,igpm\/responsive_menus_accordion,igpm\/responsive_menus_dropmenu,igpm\/responsive_menus_slidedown,igpm\/responsive_tables,igpm\/search,igpm\/slideshow_styles,igpm\/taxonomy,igpm\/title_styles,piwik\/piwik,system\/base"},"piwik":{"trackMailto":true},"igpm":{"at_slideshows":{"igpm-slideshow-0":{"animation":"slide","direction":"horizontal","smoothheight":0,"slideshowspeed":"4000","animationspeed":"600","controlnav":1,"directionnav":1,"pauseonaction":1,"pauseonhover":0,"animationloop":1,"reverse":0,"randomize":0,"autostart":1,"initdelay":"","easing":"swing","usecss":0,"touch":1,"video":0,"prevtext":"Previous","nexttext":"Next","slideshow_class":".igpm-slideshow-0","selector":".slides \u003E li"}},"at_responsivemenus":{"bp":"all and (min-width: 60.0625em)","default":"ms-slidedown","responsive":"ms-dropmenu","acd":{"acd_load":true,"acd_default":true,"acd_responsive":false,"acd_both":false}},"at_breakpoints":{"at_core_simple_wide":{"breakpoint":"wide","mediaquery":"all and (min-width: 60.0625em)"},"at_core_simple_tablet-isolate":{"breakpoint":"tablet","mediaquery":"all and (min-width: 45.0625em) and (max-width: 60em)"},"at_core_simple_mobile":{"breakpoint":"mobile","mediaquery":"all and (max-width: 45em)"}}},"user":{"uid":0,"permissionsHash":"a001b12ee327473f5b7fcc514e8c7c2e070941f205b25aeb906a711495c585b2"}}</script>
 <script src="/core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
 <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.2.1"></script>
 <script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
 <script src="/core/misc/drupalSettingsLoader.js?v=8.4.2"></script>
 <script src="/core/misc/drupal.js?v=8.4.2"></script>
 <script src="/core/misc/drupal.init.js?v=8.4.2"></script>
+<script src="/modules/piwik/js/piwik.js?v=8.4.2"></script>
 <script src="/modules/cycle2/cycle2/jquery.cycle2.js?v=2.1.6"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.0.8/fontfaceobserver.js"></script>
 <script src="/themes/igpm/scripts/fontfaceobserver-check.js?v=8.x-1.0"></script>
